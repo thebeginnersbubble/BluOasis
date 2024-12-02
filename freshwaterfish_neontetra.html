@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Description: freshwaterfish_neontetra.html-->
+<!--Author: Hui Yee WONG-->
+<!--Date: 17/10/2024-->
+<!--Validation: ok 18/11/2024-->
+
+<head>
+	<title>BluOasis</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Hui Yee WONG">
+	<meta name="description" content="BluOasis_Neon Tetra">
+	<meta name="keywords" content="Beginner Friendly Fish, Freshwater Fish, Cold-tolerant Tropical Fish, Neon Tetra">
+	<!--"width=device-width" makes the width of the page match the device's width.-->
+    <!--"initial-scale=1.0" sets the initial zoom level to 100%, means that the page will not be zoomed in or out when it first loads.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="images/banner.png" alt="Banner">
+		
+		<h1 class="title"><a href="index.html" title="Return to Homepage">BluOasis</a></h1>
+	</header>
+		
+	<nav class="nav">
+	<!--Burger Menu Button-->
+	<button class="burger_menu" onclick="toggleMenu()">☰</button>
+	
+		<ul class="menu">
+			<!--First Level-->
+			<li id="guidesMenu" class="hover_bgcolor"><a href="guides.html">Guides</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="guides.html#stepbysteptutorial">Step-by-Step Tutorial</a></li>
+					<li><a href="guides.html#demonstrationonhowtotransferfish">Demonstration on How to Transfer Fish</a></li>
+			</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="freshwaterfishMenu" class="hover_bgcolor"><a href="freshwaterfish.html">Freshwater Fish</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="freshwaterfish_coldwaterfishMenu"><a href="freshwaterfish.html#coldwaterfish">Coldwater Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_whitecloudmountainminnow.html">White Cloud Mountain Minnow</a></li>
+							<li><a href="freshwaterfish_cometgoldfish.html">Comet Goldfish</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_tropicalfishMenu"><a href="freshwaterfish.html#tropicalfish">Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_guppy.html">Guppy</a></li>
+							<li><a href="freshwaterfish_cherrybarb.html">Cherry Barb</a></li>
+							<li><a href="freshwaterfish_bettasplendens.html">Betta Splendens</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_coldtoleranttropicalfishMenu"><a href="freshwaterfish.html#coldtoleranttropicalfish">Cold-tolerant Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_neontetra.html">Neon Tetra</a></li>
+							<li><a href="freshwaterfish_zebrafish.html">Zebrafish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="fishtankMenu" class="hover_bgcolor"><a href="fishtank.html">Fish Tank</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="fishtank.html#fishtankrecommendation">Fish Tank Recommendation</a></li>
+					<li><a href="fishtank.html#localaquaticsupplystores">Local Aquatic Supply Stores</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="feedingMenu" class="hover_bgcolor"><a href="feeding.html">Feeding</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="feeding.html#dryfoods">Dry Foods</a></li>
+					<li><a href="feeding.html#frozenfoods">Frozen Foods</a></li>
+					<li><a href="feeding.html#freezedriedfoods">Freeze Dried Foods</a></li>
+					<li><a href="feeding.html#livefoods">Live Foods</a></li>
+					<li><a href="feeding.html#greens">Greens</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="careandmaintenanceMenu" class="hover_bgcolor"><a href="careandmaintenance.html">Care and Maintenance</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="careandmaintenance_fishhealthcare.html">Fish Health Care</a></li>
+					<li><a href="careandmaintenance_fishtankmaintenance.html">Fish Tank Maintenance</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="decorationMenu" class="hover_bgcolor"><a href="decoration.html">Decoration</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="decoration_biomaterialsMenu"><a href="decoration.html#biomaterials">Biomaterials</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="decoration_smallaquariumwaterplants.html">Small Aquarium Water Plants</a></li>
+							<li><a href="decoration_mediumaquariumwaterplants.html">Medium Aquarium Water Plants</a></li>
+							<li><a href="decoration_largeaquariumwaterplants.html">Large Aquarium Water Plants</a></li>
+						</ul>
+					</li>
+				<!--Second Level-->
+					<li><a href="decoration.html#diyornaments">DIY Ornaments</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li class="hover_bgcolor"><a href="feedback.html">Feedback</a></li>
+			
+			<!--First Level-->
+			<li id="BYT_nav"><a href="buildyourtank.html"><img src="images/nav_byt.png" alt="Build Your Tank"></a></li>
+		</ul>
+	</nav>
+	
+	<article>
+	
+		<div class="title_location sectionlinks">
+			<!--breadcrumb-->
+			<p class="context"><a href="freshwaterfish.html">Freshwater Fish</a> &gt; <a href="freshwaterfish.html#coldtoleranttropicalfish">Cold-tolerant Tropical Fish</a> &gt; <a href="freshwaterfish_neontetra.html">Neon Tetra</a></p>
+			
+			<h2 class="heading1">Neon Tetra</h2>
+		</div>
+		
+		<!--The information below is taken from "https://consolidatedff.com/blogs/news/neon-tetra-care-guide" \l ":~:text=Neon%20tetras%20can%20survive%20in,keep%20water%20circulated%20and%20fresh", "https://www.thesprucepets.com/neon-tetra-paracheirodon-1381835", "https://www.completekoi.com/blogs/news/keeping-tropical-fish-how-to-care-for-neon-tetras" \l ":~:text=The%20Neon%20tetra%20is%20a,petite%20size%20and%20peaceful%20nature" \l "google_vignette", "https://eastoceansg.com/products/neon-tetra?srsltid=AfmBOorWd-_DczRc0qTs3ZR8PDRsv1sq_M1ytSlhBZ4hYZfdbu96JtJy"-->
+		
+		<!--This image is taken from "https://gr.pinterest.com/pin/97531148173607999/"-->
+		<p><img src="images/neon_tetra_02.jpeg" alt="Neon Tetra" class="fish_img"></p>
+		
+		<table class="basicprofile context">
+			<tr>
+				<th colspan="2" class="freshwaterfish_heading2 table_heading">Basic Profile</th>
+			</tr>
+			
+			<tr>
+				<td>Family</td>
+				<td>Characidae</td>
+			</tr>
+			
+			<tr>
+				<td>Origin</td>
+				<td>Southeastern Colombia, Eastern Peru, Western Brazil</td>
+			</tr>
+			
+			<tr>
+				<td>Physical Characteristics</td>
+				<td>Neon Tetras have slender, torpedo-shaped bodies with a bright neon blue line running from their head to their adipose fin. They are also known for their vibrant, colorful appearance.</td>
+			</tr>
+
+			<tr>
+				<td>Full-grown Size</td>
+				<td>1.5 inches</td>
+			</tr>
+			
+			<tr>
+				<td>Life Span</td>
+				<td>5 to 10 years</td>
+			</tr>
+			
+			<tr>
+				<td>Diet</td>
+				<td>Omnivore</td>
+			</tr>
+			
+			<tr>
+				<td>Tank Level</td>
+				<td>Middle dwellers</td>
+			</tr>
+		</table>
+		
+		<table class="compatibility context">
+			<tr>
+				<th class="freshwaterfish_heading2" colspan="5">Compatibility</th>
+			</tr>
+			
+			<tr>
+				<td>Aggressive level</td>
+				<td colspan="4">Tank Mates</td>
+			</tr>
+			
+			<tr>
+				<td><img src="images/1_star_rating.png" alt="Neon Tetra Aggressive Level Star-rating" class="compatibility_img_01"></td>
+				<td>
+				<!--Image below is taken from "https://www.zebrafishfilm.org/uploads/1/1/3/5/113588191/small-zebrafish-from-shutterstock_orig.png"-->
+				<a href="freshwaterfish_zebrafish.html"><img src="images/zebrafish_01.png" alt="Zebrafish" title="Click me for more details!" class="compatibility_img_02"></a>
+				</td>
+				<td>
+				<!--Image below is taken from "https://www.thesprucepets.com/thmb/RWtvgogMOdrfWxKAL6SqeezZezk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/white-cloud-mountain-minnow-1380870-hero-6ba019390bc04253a537f30061617ea7.jpg"-->
+				<a href="freshwaterfish_whitecloudmountainminnow.html"><img src="images/white_cloud_mountain_minnow_01.png" alt="White Cloud Mountain Minnow" title="Click me for more details!" class="compatibility_img_02"></a>
+				</td>
+				<td>
+				<!--Image below is taken from "https://pixabay.com/users/zucky123-13224307/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=444019"-->
+				<a href="freshwaterfish_guppy.html"><img src="images/guppy_01.png" alt="Guppy" title="Click me for more details!" class="compatibility_img_02"></a>
+				</td>
+				<td>
+				<!--Image below is taken from "https://www.fishlaboratory.com/wp-content/uploads/2022/05/cherry-barb-1536x905.jpeg"-->
+				<a href="freshwaterfish_cherrybarb.html"><img src="images/cherry_barb_01.png" alt="Cherry Barb" title="Click me for more details!" class="compatibility_img_02"></a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Peaceful</td>
+				<td>Zebrafish</td>
+				<td>White Cloud Mountain Minnow</td>
+				<td>Guppy</td>
+				<td>Cherry Barb</td>
+			</tr>
+		</table>
+		
+		<table class="fishdemands context">
+			<tr>
+				<th colspan="2" class="freshwaterfish_heading2 table_heading">Fish Demands</th>
+			</tr>
+			
+			<tr>
+				<td>Water Temperature</td>
+				<td>68 F to 79 F &#40;20 C to 26 C&#41;</td>
+			</tr>
+			
+			<tr>
+				<td>Water Hardness</td>
+				<td>5 dGH to 15 dGH </td>
+			</tr>
+			
+			<tr>
+				<td>pH Preferences</td>
+				<td>pH 4 to pH 7.5</td>
+			</tr>
+			
+			<tr>
+				<td>Minimum Tank Size</td>
+				<td>10 gallons</td>
+			</tr>
+			
+			<tr>
+				<td>Feeding</td>
+				<td>Neon Tetras feed on small pellets, granules, fine flakes, as well as frozen brine shrimp, daphnia, and freeze-dried or frozen bloodworms.</td>
+			</tr>
+		</table>
+		
+		<p class="price context"><span class="freshwaterfish_heading2">Estimated Price &#40;RM&#41;:</span> 3-8 per Neon Tetra</p>
+		
+		<!--Tip-->
+		<div class="tip">
+			<h4 class="freshwaterfish_heading2">Tip:</h4>
+			
+			<p class="context">It's best to keep Neon Tetras in groups of at least six and to avoid larger Tetras, as they may see Neon Tetras as a meal at the first opportunity.</p>
+		</div>
+		
+		<div class="button_container">
+			<!--Previous button-->
+			<p class="previousbutton_02 context"><a href="freshwaterfish_bettasplendens.html">Previous</a></p>
+			
+			<!--Next button-->
+			<p class="nextbutton_02 context"><a href="freshwaterfish_zebrafish.html">Next</a></p>
+		</div>
+	</article>
+	
+	<footer>
+		<div class="footer footer_links context">
+			<p><img src="images/logo.png" alt="Logo" id="logo_image"></p>
+			
+			<p class="footer_text">Contact The Beginners’ Bubble at:<br>Email: <a href="mailto:berrybluberryblu@gmail.com">berrybluberryblu@gmail.com</a><br>Telephone number: <a href="tel:+6035248775">+6035248775</a></p>
+			
+			<p class="footer_text">&#169; <a href="thebeginnersbubble.html">The Beginners’ Bubble</a> | Last updated: 18 November 2024</p>
+		</div>
+		
+		<p><img src="images/footer.png" alt="Footer" id="footer_image"></p>
+	</footer>
+</body>
+</html>

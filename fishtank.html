@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Description: fishtank.html-->
+<!--Author: Clara Ricky CHANG -->
+<!--Date: 18/11/2024 -->
+<!--Validation: ok 18/11/2024-->
+
+<head>
+	<title>BluOasis</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Clara Ricky CHANG">
+	<meta name="description" content="BluOasis_Fish Tank">
+	<meta name="keywords" content="BluOasis, Fish Tank Recommendation, Local Aquatic Supply Stores">
+	<!--"width=device-width" makes the width of the page match the device's width.-->
+    <!--"initial-scale=1.0" sets the initial zoom level to 100%, means that the page will not be zoomed in or out when it first loads.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="images/banner.png" alt="Banner">
+		
+		<h1 class="title"><a href="index.html" title="Return to Homepage">BluOasis</a></h1>
+	</header>
+		
+	<nav class="nav">
+	<!--Burger Menu Button-->
+	<button class="burger_menu" onclick="toggleMenu()">☰</button>
+	
+		<ul class="menu">
+			<!--First Level-->
+			<li id="guidesMenu" class="hover_bgcolor"><a href="guides.html">Guides</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="guides.html#stepbysteptutorial">Step-by-Step Tutorial</a></li>
+					<li><a href="guides.html#demonstrationonhowtotransferfish">Demonstration on How to Transfer Fish</a></li>
+			</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="freshwaterfishMenu" class="hover_bgcolor"><a href="freshwaterfish.html">Freshwater Fish</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="freshwaterfish_coldwaterfishMenu"><a href="freshwaterfish.html#coldwaterfish">Coldwater Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_whitecloudmountainminnow.html">White Cloud Mountain Minnow</a></li>
+							<li><a href="freshwaterfish_cometgoldfish.html">Comet Goldfish</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_tropicalfishMenu"><a href="freshwaterfish.html#tropicalfish">Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_guppy.html">Guppy</a></li>
+							<li><a href="freshwaterfish_cherrybarb.html">Cherry Barb</a></li>
+							<li><a href="freshwaterfish_bettasplendens.html">Betta Splendens</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_coldtoleranttropicalfishMenu"><a href="freshwaterfish.html#coldtoleranttropicalfish">Cold-tolerant Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_neontetra.html">Neon Tetra</a></li>
+							<li><a href="freshwaterfish_zebrafish.html">Zebrafish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="fishtankMenu" class="hover_bgcolor"><a href="fishtank.html">Fish Tank</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="fishtank.html#fishtankrecommendation">Fish Tank Recommendation</a></li>
+					<li><a href="fishtank.html#localaquaticsupplystores">Local Aquatic Supply Stores</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="feedingMenu" class="hover_bgcolor"><a href="feeding.html">Feeding</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="feeding.html#dryfoods">Dry Foods</a></li>
+					<li><a href="feeding.html#frozenfoods">Frozen Foods</a></li>
+					<li><a href="feeding.html#freezedriedfoods">Freeze Dried Foods</a></li>
+					<li><a href="feeding.html#livefoods">Live Foods</a></li>
+					<li><a href="feeding.html#greens">Greens</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="careandmaintenanceMenu" class="hover_bgcolor"><a href="careandmaintenance.html">Care and Maintenance</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="careandmaintenance_fishhealthcare.html">Fish Health Care</a></li>
+					<li><a href="careandmaintenance_fishtankmaintenance.html">Fish Tank Maintenance</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="decorationMenu" class="hover_bgcolor"><a href="decoration.html">Decoration</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="decoration_biomaterialsMenu"><a href="decoration.html#biomaterials">Biomaterials</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="decoration_smallaquariumwaterplants.html">Small Aquarium Water Plants</a></li>
+							<li><a href="decoration_mediumaquariumwaterplants.html">Medium Aquarium Water Plants</a></li>
+							<li><a href="decoration_largeaquariumwaterplants.html">Large Aquarium Water Plants</a></li>
+						</ul>
+					</li>
+				<!--Second Level-->
+					<li><a href="decoration.html#diyornaments">DIY Ornaments</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li class="hover_bgcolor"><a href="feedback.html">Feedback</a></li>
+			
+			<!--First Level-->
+			<li id="BYT_nav"><a href="buildyourtank.html"><img src="images/nav_byt.png" alt="Build Your Tank"></a></li>
+		</ul>
+	</nav>
+	
+<article class="content">
+	<h2 class="heading1">Fish Tank Recommendations</h2>
+	
+    <p class="context">Starting with a second-hand 20-gallon tank is a great option for beginners!</p>		
+
+	<div class="tank_container">
+	
+		<!--5-Gallon Fish Tank Card-->
+		<!--This information is taken from https://www.saltwateraquarium.com/standard-aquariums-weights-sizes/-->
+		<div class="tank_card_wrapper">
+			<div class="tank_card">
+				<!--Image below is taken from https://pin.it/eiO7m0wOx -->
+				<img src="images/5_gallon_tank.png" alt="5-Gallon Fish Tank" class="tank_image">
+				
+				<h3 class="section">5-Gallon Fish Tank</h3>
+			</div>
+			
+			<!--The details element can be used to create a collapsible section of content.-->
+			<!--It allows users to expand or collapse information, making it useful for additional details that may not be required at all times.-->
+			<details class="tank_button_container">
+			
+				<!--Summary element acts as a button to toggle the visibility of the details. Clicking this will show or hide the content inside the details element.-->
+				<summary class="context fishtank_button"  title="Click Me!">Learn More</summary>
+				
+				<div class="context pop-up_content">
+					<p><strong>Size: </strong>16" x 8" x 10"</p>
+					
+					<p><strong>Suitable Fish: </strong>1 Betta Fish</p>
+					
+					<!-- This information is taken from https://www.tetra-fish.com/ask-tetra/faqs/aquarium/fish-tank-maintenance-tips/how-often-should-i-change-the-water-in-my-aquarium.aspx#:~:text=You%20should%20do%20a%2025,every%20two%20to%20four%20weeks-->
+					<p><strong>Tips: </strong>25% water change every two to four weeks.</p>
+				</div>
+			</details>
+		</div>
+
+		<!-- 20-Gallon Fish Tank Card -->
+		<!--This information is taken from https://www.saltwateraquarium.com/standard-aquariums-weights-sizes/-->
+		<div class="tank_card_wrapper">
+			<div class="tank_card">
+				<!--Image below is taken from https://images.app.goo.gl/mR3u38ttDn9WqkZ58-->
+				<img src="images/20_gallon_tank.png" alt="20-Gallon Fish Tank" class="tank_image">
+				
+				<h3 class="section">20-Gallon Fish Tank</h3>
+			</div>
+			
+			<details class="tank_button_container">
+				<summary class="context fishtank_button"  title="Click Me!">Learn More</summary>
+				
+				<div class="context pop-up_content">
+					<p><strong>Size (High): </strong>24" x 12" x 16"</p>
+					
+					<p><strong>Size (Long): </strong>30" x 12" x 12"</p>
+					
+					<p><strong>Suitable Fish: </strong>Neon Tetras, Zebrafish, Guppy, Cherry Barb</p>
+					
+					<!--This information is taken from https://pethelpful.com/fish-aquariums/Aquarium-maintenance-water-change#:~:text=Change%2010%20to%2020%20percent,if%20you%20do%2020%20percent-->
+					<p><strong>Tips: </strong>20% water change weekly.</p>
+				</div>
+			</details>
+		</div>
+
+		<!-- 50-Gallon Fish Tank Card -->
+		<!--This information is taken from https://www.saltwateraquarium.com/standard-aquariums-weights-sizes/-->
+		<div class="tank_card_wrapper">
+			<div class="tank_card">
+				<!--Image below is taken from https://images.app.goo.gl/qomAKN35EtJ1XBRZ7-->
+				<img src="images/50_gallon_tank.png" alt="50-Gallon Fish Tank" class="tank_image">
+				
+				<h3 class="section">50-Gallon Fish Tank</h3>
+			</div>
+			
+			<details class="tank_button_container">
+			
+				<summary class="context fishtank_button" title="Click Me!">Learn More</summary>
+				
+				<div class="context pop-up_content">
+					<p><strong>Size: </strong>36" x 18" x 19"</p>
+					
+					<p><strong>Suitable Fish: </strong>Comet Goldfish, Zebrafish, Neon Tetras, Cherry Barb</p>
+					
+					<!--This information is taken from https://pethelpful.com/fish-aquariums/Aquarium-maintenance-water-change#:~:text=Change%2010%20to%2020%20percent,if%20you%20do%2020%20percent-->
+					<p><strong>Tips: </strong>10% to 20% water change every 1 to 2 weeks.</p>
+				</div>
+			</details>
+		</div>
+
+		<!--100-Gallon Fish Tank Card-->
+		<!--This information is taken from https://www.fishtankbank.com/what-size-is-a-100-gallon-fish-tank/-->
+		<div class="tank_card_wrapper">
+			<div class="tank_card">
+				<!--Image below is taken from https://images.app.goo.gl/Kd5Jj7L1LkH9BLk37-->
+				<img src="images/100_gallon.png" alt="100-Gallon Fish Tank" class="tank_image">
+				
+				<h3 class="section">100-Gallon Fish Tank</h3>
+			</div>
+			
+			<details class="tank_button_container">
+				
+				<summary class="context fishtank_button" title="Click Me!">Learn More</summary>
+				
+				<div class="context pop-up_content">
+					<p><strong>Size: </strong>24" x 18" x 18"</p>
+					
+					<p><strong>Suitable Fish: </strong>Neon Tetras, Zebrafish, White Cloud Mountain Minnow, Guppy, Cherry Barb</p>
+					
+					<!--This information is taken from https://www.aqueon.com/articles/starting-a-new-aquarium-60-days#:~:text=Remember%20to%20treat%20tap%20water,a%20good%20rule%20of%20thumb-->
+					<p><strong>Tips: </strong>10% to 25% water change every 1 to 2 weeks.</p>
+				</div>
+			</details>
+		</div>
+	</div>
+
+		<!--Link to Local Aquatic Supply Stores section-->
+		<h4 class="heading2" id="localaquaticsupplystores">Local Aquatic Supply Stores</h4>
+		
+		<p class="context">If you're looking for reliable places to purchase fish tanks and aquatic accessories, here are some great options in Malaysia:</p>
+			
+	<div class="stores_container">
+		<!--This information below is taken from https://www.facebook.com/@tungyoungaquarium/-->
+		<table class="fish_stores">
+			<caption class="caption">Store Details</caption>
+			<tr>
+				<th colspan="2" class="section">TUNG YOUNG AQUARIUM</th>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context">We recommend Tung Young Aquarium. It is because they have over 20 years of experience specializing in aquatic pets and accessories.</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context"><strong>Address:</strong> 44, Jalan Rubber, 93300 Kuching, Sarawak</td>
+			</tr>
+		
+			<tr>
+				<td colspan="2" class="context"><strong>Opening Hours: </strong>Every day from 9 AM to 6:30 PM</td>
+			</tr>
+		
+			<tr>
+				<td rowspan="2" class="context"><strong>Contact<br>Information</strong></td>
+				
+				<td class="keyword_link context"><strong>Phone: </strong><a href="tel:+016-4485675">+60 16-448 5675</a></td>
+			</tr>
+		
+			<tr>
+				<td class="keyword_link context"><strong>Email: </strong><a href="mailto:christopherlbtiano@gmail.com">christopherlbtiano@gmail.com</a></td>
+			</tr>
+		</table>	
+		
+		<!--Embedded Google Map-->
+		<div class="map_container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.8458812010628!2d110.3738688758045!3d1.6017587803766033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31f6e0e7c7d3e04f%3A0x91b9b7e72f6e4b84!2s44%2C%20Jalan%20Rubber%2C%2093300%20Kuching%2C%20Sarawak!5e0!3m2!1sen!2smy!4v1695551728441!5m2!1sen!2smy" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</div>
+	
+	<div class="stores_container">
+		
+		<!--This information below is taken from https://www.funempire.com/my/blog/aquatic-pets-kl-selangor/-->
+		<table class="fish_stores">	
+			<caption class="caption">Store Details</caption>
+			<tr>
+				<th colspan="2" class="section">FISH DEPOT</th>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context">We recommend this store as it has a wide range of aquarium supplies as well as fish tank setup and offers maintenance services. Their friendly and knowledgeable staff are always there to assist you.</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context"><strong>Address:</strong> 5-1, Jalan Pju1/3F Sunwaymas commercial Centre,47301 Petaling Jaya, Selangor Malaysia 47301 Petaling Jaya, Selangor, Malaysia</td>
+			</tr>
+		
+			<tr>
+				<td colspan="2" class="context"><strong>Opening Hours: </strong>Every day from 11:00 AM – 6:30 PM, Closed on Tuesday</td>
+			</tr>
+		
+			<tr>
+				<td rowspan="2" class="context"><strong>Contact<br>Information</strong></td>
+				
+				<td class="keyword_link context"><strong>Phone: </strong><a href="tel:+603-78867012">+60 3-7886 7012</a></td>
+			</tr>
+		
+			<tr>
+				<td class="keyword_link context"><strong>Email: </strong><a href="mailto:fishdepot@fishdepot.com.my">fishdepot@fishdepot.com.my</a></td>
+			</tr>
+		</table>	
+		
+		<!--Embedded Google Map-->
+		<div class="map_container">
+			 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.903704889698!2d101.59743049999999!3d3.12016810000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4ea398fab791%3A0xf4250796ce270183!2s5-1%20%26%207%201%2C%20Jalan%20PJU%201%2F3f%2C%20Sunway%20Mas%20Commercial%20Center%2C%2047301%20Petaling%20Jaya%2C%20Selangor!5e0!3m2!1sen!2smy!4v1728187784235!5m2!1sen!2smy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	
+	<div class="stores_container">
+
+		<!--This information is taken from https://www.funempire.com/my/blog/aquatic-pets-kl-selangor/-->
+		<table class="fish_stores">
+			<caption class="caption">Store Details</caption>
+			<tr>
+				<th colspan="2" class="section">UNIQUE AQUAPETS</th>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context">If you’re searching for freshwater fish, Unique Aquapets at NSK Kuchai Lama is a good option. Not to mention, they also provide services including aquarium design and installation.</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context"><strong>Address:</strong> Nsk Kuchai Lama, Basement 1 Lot L04 58200 Kuala Lumpur, Malaysia</td>
+			</tr>
+		
+			<tr>
+				<td colspan="2" class="context"><strong>Opening Hours:</strong> Every day from 10:00 AM – 9:00 PM, closed on Tuesday</td>
+			</tr>
+		
+			<tr>
+				<td rowspan="2" class="context"><strong>Contact <br>Information</strong></td>
+				
+				<td class="keyword_link context"><strong>Phone: </strong> <a href="tel:+60169929986"> +60 16-992 9986</a></td>
+			</tr>
+		
+			<tr>
+				<td class="keyword_link context"><strong>Email: </strong><a href="mailto:unique-aquapets@outlook.com">unique-aquapets@outlook.com</a></td>
+			</tr>
+		</table>	
+		
+		<!--Embedded Google Map-->
+		<div class="map_container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.039205927671!2d101.6905364!3d3.0842115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4a6ee0573cdf%3A0x1c75474075d4e903!2sUnique%20Aquapets%20%40%20NSK%20Kuchai%20Lama!5e0!3m2!1sen!2smy!4v1728188022952!5m2!1sen!2smy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	
+	<div class="stores_container">	
+
+		<!--This information is taken from https://www.facebook.com/JSPenangFishHome/-->	
+		<table class="fish_stores">
+			<caption class="caption">Store Details</caption>
+			<tr>
+				<th colspan="2" class="section">J&S PENANG FISH HOME</th>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context">At J&S Penang Fish Store, they have all the things you need to set up your perfect fish home. Not to mention, their helpful staff is ready to give you tips and advice for your aquarium.</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context"><strong>Address:</strong> R-2-15, Setia Triangle, Persiaran Kelicap, Bayan Lepas, Malaysia</td>
+			</tr>
+		
+			<tr>
+				<td colspan="2" class="context"><strong>Opening Hours:</strong> Monday-Wednesday open from 11:00 AM-6:00 PM. Thursday- Saturday open from 11:00 AM-7:00 PM, closed on Sunday</td>
+			</tr>
+		
+			<tr>
+				<td class="context"><strong>Contact <br>Information</strong></td>
+				
+				<td class="keyword_link context"><strong>Phone: </strong><a href="tel:+6016-9929986">+60 16-219 5070</a></td>
+			</tr>
+		</table>	
+		
+		<!--Embedded Google Map-->
+		<div class="map_container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.747082210264!2d100.2579025174438!3d5.302107799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304abf0f40707d93%3A0xe82d6f61ae7bc5ed!2sJ%26S%20Penang%20Fish%20Home!5e0!3m2!1sen!2smy!4v1728188420469!5m2!1sen!2smy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	
+	<div class="stores_container">
+	
+		<!--This information is taken from https://myweekendplan.asia/top-best-aquarium-shop-in-johor/#no1-->
+		<table class="fish_stores">
+			<caption class="caption">Store Details</caption>
+			
+			<tr>
+				<th colspan="2" class="section">JURRASIC AQUA</th>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context">Jurrasic Aqua have great selection of fish and equipments. Their staff is super friendly and always ready to help with any questions plus they also accept credit card payments.</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="context"><strong>Address:</strong> 182, Jalan Pahlawan 2, Taman Ungku Tun Aminah, 81300 Skudai, Johor</td>
+			</tr>
+		
+			<tr>
+				<td colspan="2" class="context"><strong>Opening Hours:</strong> Monday, Tuesday, Thursday, Sunday open from 10:00 AM- 7:00 PM Wednesday open from 10:00 AM – 6:30 PM</td>
+			</tr>
+		
+			<tr>
+				<td class="context"><strong>Contact <br>Information</strong></td>
+				
+				<td class="keyword_link context"><strong>Phone: </strong><a href="tel:+016-7162728">+60 16-716 2728</a></td>
+			</tr>
+		</table>	
+		
+		<!--Embedded Google Map-->
+		<div class="map_container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.413676895432!2d103.6625356!3d1.5203965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da73a3d45a7d19%3A0xf3b04c7f20d3d71c!2s182%2C%20Jalan%20Pahlawan%202%2C%20Taman%20Ungku%20Tun%20Aminah%2C%2081300%20Skudai%2C%20Johor!5e0!3m2!1sen!2smy!4v1728190103889!5m2!1sen!2smy" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+</article>
+
+	<footer>
+		<div class="footer footer_links context">
+			<p><img src="images/logo.png" alt="Logo" id="logo_image"></p>
+			
+			<p class="footer_text">Contact The Beginners’ Bubble at:<br>Email: <a href="mailto:berrybluberryblu@gmail.com">berrybluberryblu@gmail.com</a><br>Telephone number: <a href="tel:+6035248775">+6035248775</a></p>
+			
+			<p class="footer_text">&#169; <a href="thebeginnersbubble.html">The Beginners’ Bubble</a> | Last updated: 18 November 2024</p>
+		</div>
+		
+		<p><img src="images/footer.png" alt="Footer" id="footer_image"></p>
+	</footer>
+</body>
+</html>

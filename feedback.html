@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Description: feedback.html-->
+<!--Author: Hui Yee WONG -->
+<!--Date: 15/10/2024-->
+<!--Validation: ok 30/11/2024-->
+
+<head>
+	<title>BluOasis</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Hui Yee WONG">
+	<meta name="description" content="BluOasis_Feedback">
+	<meta name="keywords" content="BluOasis, The Beginner's Bubble, Feedback, Form"  >
+	<!--"width=device-width" makes the width of the page match the device's width.-->
+    <!--"initial-scale=1.0" sets the initial zoom level to 100%, means that the page will not be zoomed in or out when it first loads.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="images/banner.png" alt="Banner">
+		
+		<h1 class="title"><a href="index.html" title="Return to Homepage">BluOasis</a></h1>
+	</header>
+		
+	<nav class="nav">
+	<!--Burger Menu Button-->
+	<button class="burger_menu" onclick="toggleMenu()">☰</button>
+	
+		<ul class="menu">
+			<!--First Level-->
+			<li id="guidesMenu" class="hover_bgcolor"><a href="guides.html">Guides</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="guides.html#stepbysteptutorial">Step-by-Step Tutorial</a></li>
+					<li><a href="guides.html#demonstrationonhowtotransferfish">Demonstration on How to Transfer Fish</a></li>
+			</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="freshwaterfishMenu" class="hover_bgcolor"><a href="freshwaterfish.html">Freshwater Fish</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="freshwaterfish_coldwaterfishMenu"><a href="freshwaterfish.html#coldwaterfish">Coldwater Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_whitecloudmountainminnow.html">White Cloud Mountain Minnow</a></li>
+							<li><a href="freshwaterfish_cometgoldfish.html">Comet Goldfish</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_tropicalfishMenu"><a href="freshwaterfish.html#tropicalfish">Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_guppy.html">Guppy</a></li>
+							<li><a href="freshwaterfish_cherrybarb.html">Cherry Barb</a></li>
+							<li><a href="freshwaterfish_bettasplendens.html">Betta Splendens</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_coldtoleranttropicalfishMenu"><a href="freshwaterfish.html#coldtoleranttropicalfish">Cold-tolerant Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_neontetra.html">Neon Tetra</a></li>
+							<li><a href="freshwaterfish_zebrafish.html">Zebrafish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="fishtankMenu" class="hover_bgcolor"><a href="fishtank.html">Fish Tank</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="fishtank.html#fishtankrecommendation">Fish Tank Recommendation</a></li>
+					<li><a href="fishtank.html#localaquaticsupplystores">Local Aquatic Supply Stores</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="feedingMenu" class="hover_bgcolor"><a href="feeding.html">Feeding</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="feeding.html#dryfoods">Dry Foods</a></li>
+					<li><a href="feeding.html#frozenfoods">Frozen Foods</a></li>
+					<li><a href="feeding.html#freezedriedfoods">Freeze Dried Foods</a></li>
+					<li><a href="feeding.html#livefoods">Live Foods</a></li>
+					<li><a href="feeding.html#greens">Greens</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="careandmaintenanceMenu" class="hover_bgcolor"><a href="careandmaintenance.html">Care and Maintenance</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="careandmaintenance_fishhealthcare.html">Fish Health Care</a></li>
+					<li><a href="careandmaintenance_fishtankmaintenance.html">Fish Tank Maintenance</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="decorationMenu" class="hover_bgcolor"><a href="decoration.html">Decoration</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="decoration_biomaterialsMenu"><a href="decoration.html#biomaterials">Biomaterials</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="decoration_smallaquariumwaterplants.html">Small Aquarium Water Plants</a></li>
+							<li><a href="decoration_mediumaquariumwaterplants.html">Medium Aquarium Water Plants</a></li>
+							<li><a href="decoration_largeaquariumwaterplants.html">Large Aquarium Water Plants</a></li>
+						</ul>
+					</li>
+				<!--Second Level-->
+					<li><a href="decoration.html#diyornaments">DIY Ornaments</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li class="hover_bgcolor"><a href="feedback.html">Feedback</a></li>
+			
+			<!--First Level-->
+			<li id="BYT_nav"><a href="buildyourtank.html"><img src="images/nav_byt.png" alt="Build Your Tank"></a></li>
+		</ul>
+	</nav>
+	
+	<article class="form">
+		<h2 class="heading1">Feedback Form</h2>
+		
+		<form name="feedbackform" method="post" action="mailto:berrybluberryblu@gmail.com" enctype="text/plain">
+		
+		<fieldset>
+			<legend class="heading2">Demographic Questions</legend>
+
+			<table class="context">
+				
+				<tr>
+					<td>1. Name</td>
+				</tr>
+				
+				<tr>
+					<td><input type = "text" name ="name" placeholder="Please type your name here 🤗." size="60" required="required" class="name" id="user_name"></td>
+				</tr>
+				
+				<tr>
+					<td>2. Age</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<select name="age" size="3" required="required" class="age_selection">
+						<option value="8-12" class="context">8 to 12</option>
+						<option value="13-18" class="context">13 to 18</option>
+						<option value="19 and above" class="context">19 and above</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>3. Gender</td>
+				</tr>
+				
+				<tr>
+					<td>
+					<input type="radio" name="gender" value="male" id="male" checked="checked" required="required">
+				
+					<label for="male">Male</label>
+					
+					<input type="radio" name="gender" value="female" id="female">
+					
+					<label for="female">Female</label>
+					</td>
+				</tr>
+			</table>
+				
+		</fieldset>
+		
+		<fieldset>
+			<legend class="heading2 legend">Feedback</legend>
+			
+				<table class="context">
+					<tr>
+						<td>1. How was your overall experience on the website?</td>
+					</tr>
+					
+					<tr class="rating">
+						<td>
+							<input type="radio" name="rating" id="star-5" value="5" required="required">
+									
+							<label for="star-5">★</label>
+							
+							<input type="radio" name="rating" id="star-4" value="4">
+									
+							<label for="star-4">★</label>
+									
+							<input type="radio" name="rating" id="star-3" value="3" checked="checked">
+									
+							<label for="star-3">★</label>
+
+							<input type="radio" name="rating" id="star-2" value="2">
+									
+							<label for="star-2">★</label>
+						
+							<input type="radio" name="rating" id="star-1" value="1">
+									
+							<label for="star-1">★</label>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>2. How helpful did you find our guides and tutorials?<br>&#40;with 1 being the most helpful and 5 being the least helpful&#41;</td>
+					</tr>
+					
+					<tr>
+						<td>1 <input type="range" name="helpful" min="1" max="5" value="3"> 5</td>
+					</tr>
+					
+					<tr>
+						<td>3. Was there anything you were hoping to find but couldn't?</td>
+					</tr>
+						
+					<tr>
+						<td>
+							<input type="radio" name="radio" value="Yes" id="Yes" checked="checked" required="required">
+							
+							<label for="Yes">Yes</label>
+
+							<input type="radio" name="radio" value="No" id="No">
+							
+							<label for="No">No</label>
+						</td>
+					</tr>
+						
+					<tr>
+						<td>If yes, can you please specify?:</td>
+					</tr>
+					
+					<tr>
+						<td><input class="open_ended_01" type="text" name="lack_info" size="60" placeholder="We’d love to hear 👀!"></td>
+					</tr>
+				
+					<tr>
+						<td>4. Do you have any other thoughts or suggestions you'd like to share with us?</td>
+					</tr>
+					
+					<tr>
+						<td><textarea class="open_ended_02" name="suggestions" placeholder="Share your thoughts with us! We'd love to hear your feedback to help us improve 😊." rows="5" cols="80"></textarea></td>
+					</tr>
+						
+					<tr>
+						<td>5. If you'd like us to get in touch, feel free to leave your email address!</td>
+					</tr>
+					
+					<tr>
+						<td><input type="email" class="open_ended_03" name="email" size="50" placeholder="Register yourself with us here 🤩!"></td>
+					</tr>
+				</table>
+				
+			</fieldset>
+		</form>
+		
+		<div class="button_container" id="feedback_button">
+			<p><input type="reset" value="Reset"></p>
+						
+			<p><input type="submit" value="Submit"></p>
+		</div>
+		
+	</article>		
+
+
+	<footer>
+		<div class="footer footer_links context">
+			<p><img src="images/logo.png" alt="Logo" id="logo_image"></p>
+			
+			<p class="footer_text">Contact The Beginners’ Bubble at:<br>Email: <a href="mailto:berrybluberryblu@gmail.com">berrybluberryblu@gmail.com</a><br>Telephone number: <a href="tel:+6035248775">+6035248775</a></p>
+			
+			<p class="footer_text">&#169; <a href="thebeginnersbubble.html">The Beginners’ Bubble</a> | Last updated: 18 November 2024</p>
+		</div>
+		
+		<p><img src="images/footer.png" alt="Footer" id="footer_image"></p>
+	</footer>
+</body>
+</html>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

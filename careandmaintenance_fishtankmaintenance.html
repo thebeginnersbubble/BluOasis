@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Description: careandmaintenance_fishtankmaintenance.html -->
+<!--Author: Filicia Jing Xuan WONG -->
+<!--Date: 17/10/2024 -->
+<!--Validation: Ok 18/11/2024 -->
+
+<head>
+	<title>BluOasis</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Filicia Jing Xuan WONG">
+	<meta name="description" content="BluOasis_Fish Tank Maintenance">
+	<meta name="keywords" content="fish, tank, maintenance, equipment">
+	<!--"width=device-width" makes the width of the page match the device's width.-->
+    <!--"initial-scale=1.0" sets the initial zoom level to 100%, means that the page will not be zoomed in or out when it first loads.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="images/banner.png" alt="Banner">
+		
+		<h1 class="title"><a href="index.html" title="Return to Homepage">BluOasis</a></h1>
+	</header>
+		
+	<nav class="nav">
+	<!--Burger Menu Button-->
+	<button class="burger_menu" onclick="toggleMenu()">☰</button>
+	
+		<ul class="menu">
+			<!--First Level-->
+			<li id="guidesMenu" class="hover_bgcolor"><a href="guides.html">Guides</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="guides.html#stepbysteptutorial">Step-by-Step Tutorial</a></li>
+					<li><a href="guides.html#demonstrationonhowtotransferfish">Demonstration on How to Transfer Fish</a></li>
+			</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="freshwaterfishMenu" class="hover_bgcolor"><a href="freshwaterfish.html">Freshwater Fish</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="freshwaterfish_coldwaterfishMenu"><a href="freshwaterfish.html#coldwaterfish">Coldwater Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_whitecloudmountainminnow.html">White Cloud Mountain Minnow</a></li>
+							<li><a href="freshwaterfish_cometgoldfish.html">Comet Goldfish</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_tropicalfishMenu"><a href="freshwaterfish.html#tropicalfish">Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_guppy.html">Guppy</a></li>
+							<li><a href="freshwaterfish_cherrybarb.html">Cherry Barb</a></li>
+							<li><a href="freshwaterfish_bettasplendens.html">Betta Splendens</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_coldtoleranttropicalfishMenu"><a href="freshwaterfish.html#coldtoleranttropicalfish">Cold-tolerant Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_neontetra.html">Neon Tetra</a></li>
+							<li><a href="freshwaterfish_zebrafish.html">Zebrafish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="fishtankMenu" class="hover_bgcolor"><a href="fishtank.html">Fish Tank</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="fishtank.html#fishtankrecommendation">Fish Tank Recommendation</a></li>
+					<li><a href="fishtank.html#localaquaticsupplystores">Local Aquatic Supply Stores</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="feedingMenu" class="hover_bgcolor"><a href="feeding.html">Feeding</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="feeding.html#dryfoods">Dry Foods</a></li>
+					<li><a href="feeding.html#frozenfoods">Frozen Foods</a></li>
+					<li><a href="feeding.html#freezedriedfoods">Freeze Dried Foods</a></li>
+					<li><a href="feeding.html#livefoods">Live Foods</a></li>
+					<li><a href="feeding.html#greens">Greens</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="careandmaintenanceMenu" class="hover_bgcolor"><a href="careandmaintenance.html">Care and Maintenance</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="careandmaintenance_fishhealthcare.html">Fish Health Care</a></li>
+					<li><a href="careandmaintenance_fishtankmaintenance.html">Fish Tank Maintenance</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="decorationMenu" class="hover_bgcolor"><a href="decoration.html">Decoration</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="decoration_biomaterialsMenu"><a href="decoration.html#biomaterials">Biomaterials</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="decoration_smallaquariumwaterplants.html">Small Aquarium Water Plants</a></li>
+							<li><a href="decoration_mediumaquariumwaterplants.html">Medium Aquarium Water Plants</a></li>
+							<li><a href="decoration_largeaquariumwaterplants.html">Large Aquarium Water Plants</a></li>
+						</ul>
+					</li>
+				<!--Second Level-->
+					<li><a href="decoration.html#diyornaments">DIY Ornaments</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li class="hover_bgcolor"><a href="feedback.html">Feedback</a></li>
+			
+			<!--First Level-->
+			<li id="BYT_nav"><a href="buildyourtank.html"><img src="images/nav_byt.png" alt="Build Your Tank"></a></li>
+		</ul>
+	</nav>
+	
+	<article>
+		<!--The information is taken from https://www.thesprucepets.com/aquarium-checklist-1380711-->
+		<div class="fishtankmaintenance_intro">
+			<h2 class="heading1">Fish Tank Maintenance</h2>
+			<p class="context">Essential Equipment for Your Aquarium: Discover Key Maintenance Gear to Keep Your Fish Tank Healthy and Beautiful! Explore our curated selection of products linked for easy shopping, ensuring your aquatic environment thrives.</p>
+		</div>
+
+			<div class="fishtankmaintenance_container_01">
+
+				<p class="fishtankmaintenance_image"><img src="images/light.jpg" alt="Aquarium Light"></p>
+
+				<div class="fishtankmaintenance_description">
+
+					<p class="heading3">Light</p>
+
+					<p class="context"><strong>Function:</strong> Bright lighting is the key to seeing all that goes on in your aquarium and brings out the colours of your fish. It also helps the growth of aquarium plants.</p>
+
+					<p class="context keyword_link"><strong>Recommended:</strong> <a href="https://shopee.com.my/product/500473003/14301429739?gads_t_sig=VTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMFp3YThYZEc4WFkwU2xnNXVzVHZzRjBBQkFlYnNhaFJrVG40bUdhVk9VU3Zsbm9TMFdVS05JRlk3WWczVlBIRkJDVktpQ2c1QVdIVkZUbzAvOU1sd2N0UTA2YytJQnhibm8xUzhNa2lRL0JBPT0&gad_source=4&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrBoPzjcdsnIBfColsy_5_tqfYTa4UY9F6ZioSMS4cDwprM0YiXmZ5QaAk84EALw_wcB" title="Click this link to purchase" target="new_window"> Aquarium LED Lights</a> are great options as they are low cost and much cooler.</p>
+				</div>
+			</div>
+
+			<div class="fishtankmaintenance_container_02">
+				<p class="fishtankmaintenance_image"><img src="images/filtration_system.jpg" alt="Aquarium Filtration System"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Filtration System</p>
+					<p class="context"><strong>Function:</strong> Filtration systems keep the water quality clean to maintain your fish’s health.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> A <a href="https://www.google.com/aclk?sa=l&ai=DChcSEwiS1OCtj-uIAxWLEIMDHdglAvsYABADGgJzZg&co=1&gclid=Cj0KCQjwmOm3BhC8ARIsAOSbapXMb29jc0DjOAxpdN9_XBDRJ5gyqOfXiIGublRKCCih0i_gBIxqgaYaAsykEALw_wcB&sig=AOD64_190X1nOnOqJPTjWfEI7zeMLcmmAQ&ctype=5&q=&ved=0ahUKEwjX5Nutj-uIAxXC-jgGHezKLOkQww8IyQc&adurl=" title="Click this link to purchase" target="new_window">Power Filtration System</a> would be best for your your aquarium.</p>
+				</div>
+			</div>
+
+			<div class="fishtankmaintenance_container_01">
+				<p class="fishtankmaintenance_image"><img src="images/heater.jpg" alt="Aquarium Heater"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Heater</p>
+					<p class="context"><strong>Function:</strong> A heater is to maintain optimum temperature for fishes according to their species.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> <a href="https://www.google.com/url?q=https://shopee.com.my/product/4244503/3535161815%3Fgads_t_sig%3DVTJGc2RHVmtYMTlxTFVSVVRrdENkVEg0SDd3VWo1MDQyT052d3EvY1B4YkxWUDdJS2tZM3Q5OG9xSVhXRVhGZ0UvR2V5NDc0V3QyZXFpZms4cG9HSk5taXNVcWxXajUyYXRiQXVQSEFxQ0czZkVQKzNZZ3MzZEEraGMxWkFMUjk%26srsltid%3DAfmBOorLrYk6-7lR89iqYLN7dS7n9SHh1s8fOqzDF5HfM9ofviQV2V8pj-8&opi=95576897&sa=U&ved=0ahUKEwj4urvNj-uIAxVHnmMGHXjtPIEQgOUECJUB&usg=AOvVaw2rgBH1fIlcaPOvnTdKNekl" title="Click this link to purchase" target="new_window"> Submersible Aquarium Heaters</a> are an excellent choice.</p>
+				</div>
+			</div>
+			
+			<!--The information is taken from https://www.nt-labs.com/knowledge-hub/do-i-need-a-thermometer-when-there-is-a-heater-in-my-tropical-aquarium/#:~:text=A%20thermometer%20is%20considered%20an,independently%20of%20the%20aquariu-->
+			<div class="fishtankmaintenance_container_02">
+				<p class="fishtankmaintenance_image"><img src="images/thermometer.png" alt="Aquarium Thermometer"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Thermometer</p>
+					<p class="context"><strong>Function:</strong> Thermometers provides an accurate measurement of aquarium water temperature.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> <a href="https://www.google.com/url?url=https://www.lazada.com.my/products/aquariumfish-tank-water-submersible-waterproof-digital-lcd-thermometer-i453182971-s691698471.html%3Ffrom_gmc%3D1%26fl_tag%3D1&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwjuya6CkOuIAxUyslYBHQtSEG8QgOUECMwI&usg=AOvVaw01q1lF0FpVFMKrXpE5xDp_" title="Click this link to purchase" target="new_window">Waterproof thermometers</a> definitely work best.</p>
+				</div>
+			</div>
+
+			<div class="fishtankmaintenance_container_01">
+				<p class="fishtankmaintenance_image"><img src="images/subtrate.jpg" alt="Aquarium Subtrate"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Subtrate</p>
+					<p class="context"><strong>Function:</strong> Subtrates are mainly for aesthetic purposes but also acts as a site for beneficial bacteria to grow and break down the waste products produced by fishes.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> <a href="https://www.google.com/url?url=https://shopee.com.my/product/132884346/25475870630%3Fgads_t_sig%3DVTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMlk2aXVJZkxyOEduSUxtRmhCVTRMSTVCUUp3WmJuSkJYc1V6OGR3NWptTHBKeWtoblBsV2J2VjI3dnR1ZCtKWi9Xd252MnhEc29CYWdvY1g1VlVJVWM4Mk1WdkR4R0FILytBb2t3bVEzSVNRPT0%26srsltid%3DAfmBOor48OD_uz69UHMPNWVxalDLW4d15-7Gtq6HZ0-X_6sa0pLm8NoU8_Q&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwjXjt_bkOuIAxXazTgGHco7E5cQgOUECMMH&usg=AOvVaw3xpq3JfYFuebdYyHbyF2H9" title="Click this link to purchase" target="new_window"> Small and Smooth Subtrate</a> is an all time favourite.</p>
+				</div>
+			</div>
+			
+			<!--The information is taken from https://interpet.co.uk/products/aquarium-maintenance/fish-nets/-->
+			<div class="fishtankmaintenance_container_02">
+				<p class="fishtankmaintenance_image"><img src="images/fishnet.jpg" alt="Aquarium Fishnet"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Fishnet</p>
+					<p class="context"><strong>Function:</strong> Fishnets are to catch and remove fish along with removing any debris or algae found in the tank.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> Get more than one, preferably medium-sized, <a href="https://www.google.com/url?url=https://shopee.com.my/product/369798131/8052901329%3Fgads_t_sig%3DVTJGc2RHVmtYMTlxTFVSVVRrdENkWVp3RFo3Mkw5czd4Z0hzdEF1WVFibExncmpoTzhYV0hxRmpUdGV0YjVTZjAzaFRPZm9YWElZMGdzellDVGVuZC84d010YzdxaStUV2ZXeUlCcElBSkxlRTFaNWIxVm8yakZiL3poendsRFA%26srsltid%3DAfmBOoqr-4yElCvsakYTjhJ8i1gToLQbib7BbTZNxo49w-DuOFCEY-PxzmI&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwiOoJjukOuIAxWy5TQHHQqaMOkQgOUECOoI&usg=AOvVaw3mXLEpSqRJ-1g4ueBwLGM5" title="Click this link to purchase" target="new_window">good quality nets</a>.</p>
+				</div>
+			</div>
+
+			<div class="fishtankmaintenance_container_01">
+				<p class="fishtankmaintenance_image"><img src="images/water_conditioners.png" alt="Aquarium Water Conditioner"></p>
+
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Water Conditioner</p>
+					<p class="context"><strong>Function:</strong> Water conditioners take care of chlorine, ammonia, and heavy metals. This is because water must be dechlorinated before being added to a fish tank. So, be sure to use it when filling the tank or during water changes.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> All types of <a href="https://www.google.com/url?url=https://www.88petsmart.com/products/seachem-prime-water-conditioner%3Fvariant%3D33416676278325%26currency%3DMYR%26utm_medium%3Dproduct_sync%26utm_source%3Dgoogle%26utm_content%3Dsag_organic%26utm_campaign%3Dsag_organic%26srsltid%3DAfmBOoqz7dZWYsQdIC7VUKHWAWCLlbu86Z2QBGFlGBh8z6uuTA4Q7JLG15c&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwikhdT-kOuIAxVAqVYBHXcMEZEQgOUECJMH&usg=AOvVaw1ZeUaiJVOwF4KODoy4kk4v" title="Click this link to purchase" target="new_window"> aquarium water conditioner</a> are suitable for use.</p>
+				</div>
+			</div>
+
+			<div class="fishtankmaintenance_container_02">
+				<p class="fishtankmaintenance_image"><img src="images/water_test_kits.jpeg" alt="Aquarium Water Test Kits"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Water Test Kits</p>
+					<p class="context"><strong>Function:</strong> These test kits are to test the water in newly set water aquarium for ammonia, nitrite, pH, nitrate, hardness, alkalinity and chlorine.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> <a href="https://www.google.com/url?url=https://shopee.com.my/product/369798131/8052901329%3Fgads_t_sig%3DVTJGc2RHVmtYMTlxTFVSVVRrdENkWVp3RFo3Mkw5czd4Z0hzdEF1WVFibExncmpoTzhYV0hxRmpUdGV0YjVTZjAzaFRPZm9YWElZMGdzellDVGVuZC84d010YzdxaStUV2ZXeUlCcElBSkxlRTFaNWIxVm8yakZiL3poendsRFA%26srsltid%3DAfmBOoqr-4yElCvsakYTjhJ8i1gToLQbib7BbTZNxo49w-DuOFCEY-PxzmI&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwiOoJjukOuIAxWy5TQHHQqaMOkQgOUECOoI&usg=AOvVaw3mXLEpSqRJ-1g4ueBwLGM5" title="Click this link to purchase" target="new_window">Multi test strips</a> are great for beginners as they are more convenient.</p>
+				</div>
+			</div>
+
+			<div class="fishtankmaintenance_container_01">
+				<p class="fishtankmaintenance_image"><img src="images/siphon.jpg" alt="Aquarium Siphon"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Siphon</p>
+					<p class="context"><strong>Function:</strong> Siphons are used to vacuum the gravel and do water changes. They clean waste off the bottom of the tank while removing water for partial water change.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong> A <a href="https://www.google.com/url?q=https://shopee.com.my/product/95715394/24779428276%3Fgads_t_sig%3DVTJGc2RHVmtYMTlxTFVSVVRrdENkWVp3RFo3Mkw5czd4Z0hzdEF1WVFibUlsa1Q1R1Z3cS91RzcxMWlZQk92cTlsOWY2SUZ5cWIydmN1NGUyekozU0VtOHR4TVdjNVY2NStxbWdNK1RXWm5oWHFrYnZYMmVzN3d3bFFxTFRkWlE%26srsltid%3DAfmBOoqJb2c73hEYb__J73sq3xJDJZAGiUlGGAAjprzk5S1hmpYVPgJbY08&opi=95576897&sa=U&ved=0ahUKEwiQ4sXjkeuIAxX-rlYBHZo-DGgQgOUECPcB&usg=AOvVaw2QvXx50WKOCk39orCzdkvm" title="Click this link to purchase" target="new_window"> Siphon vacuum</a> is most effective.</p>
+				</div>
+			</div>
+
+			<div class="fishtankmaintenance_container_02">
+				<p class="fishtankmaintenance_image"><img src="images/algae_scrubber.jpg" alt="Aquarium Algae Scrubber"></p>
+				<div class="fishtankmaintenance_description">
+					<p class="heading3">Algae Scrubber/Magnet</p>
+					<p class="context"><strong>Function:</strong> Algae scrubbers/magnets are to clean algae off the inside of the aquarium.</p>
+					<p class="context keyword_link"><strong>Recommended:</strong><a href="https://www.google.com/url?url=https://www.lazada.com.my/products/marina-light-buty-algae-scrub-for-cleaning-tank-i1234276754-s3664418788.html%3Ffrom_gmc%3D1%26fl_tag%3D1&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwio5pPbkuuIAxWMxzgGHe7uLF0QgOUECKQH&usg=AOvVaw1jcMcPwC69hjoBrX53sHvU" title="Click this link to purchase" target="new_window"> Algae scrubbers</a> are commonly used but <a href="https://www.google.com/url?url=https://shopee.com.my/product/417461803/22564289786%3Fgads_t_sig%3DVTJGc2RHVmtYMTlxTFVSVVRrdENkVHQ3ZkZSUTMrR3pBWmZZNzdrcnRBMVEvL3ZxVjdkYkMxZjhkVTl1Q0cyMmtycE9HN0FhNWZJdHoxRlJLd2VWS0pEWi9abkl0RlhTNERQWGlRRkhheXJldXVEeDNBay9aWUtIL1cyazlGcWlWeDlDb0NiaGFIK2VwSDRMclVkOHdBPT0%26srsltid%3DAfmBOopmQTkTdxZSjPsduflCBto847l4k82NKVYyvJBsBHDWz7z1cYVbVKY&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwiN7qj2kuuIAxWDqVYBHU4KNSkQgOUECLsI&usg=AOvVaw1LFahDBZ1RRHmNfXvMjQl3" title="Click this link to purchase" target="new_window">algae magnets</a> are definitely more hassle-free.</p>
+				</div>
+			</div>
+
+	</article>
+	
+	<footer>
+		<div class="footer footer_links context">
+			<p><img src="images/logo.png" alt="Logo" id="logo_image"></p>
+			
+			<p class="footer_text">Contact The Beginners’ Bubble at:<br>Email: <a href="mailto:berrybluberryblu@gmail.com">berrybluberryblu@gmail.com</a><br>Telephone number: <a href="tel:+6035248775">+6035248775</a></p>
+			
+			<p class="footer_text">&#169; <a href="thebeginnersbubble.html">The Beginners’ Bubble</a> | Last updated: 18 November 2024</p>
+		</div>
+		
+		<p><img src="images/footer.png" alt="Footer" id="footer_image"></p>
+	</footer>
+
+</body>
+</html>

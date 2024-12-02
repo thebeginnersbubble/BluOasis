@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Description: careandmaintenance_fishhealthcare.html-->
+<!--Author: Filicia Jing Xuan WONG-->
+<!--Date: 17/10/2024-->
+<!--Validation: Ok 18/11/2024-->
+
+<head>
+	<title>BluOasis</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Filicia Jing Xuan WONG">
+	<meta name="description" content="BluOasis_Fish Health Care">
+	<meta name="keywords" content="fish, health, care, diseases, symptoms">
+	<!--"width=device-width" makes the width of the page match the device's width.-->
+    <!--"initial-scale=1.0" sets the initial zoom level to 100%, means that the page will not be zoomed in or out when it first loads.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="myScript.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="images/banner.png" alt="Banner">
+		
+		<h1 class="title"><a href="index.html" title="Return to Homepage">BluOasis</a></h1>
+	</header>
+		
+	<nav class="nav">
+	<!--Burger Menu Button-->
+	<button class="burger_menu" onclick="toggleMenu()">☰</button>
+	
+		<ul class="menu">
+			<!--First Level-->
+			<li id="guidesMenu" class="hover_bgcolor"><a href="guides.html">Guides</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="guides.html#stepbysteptutorial">Step-by-Step Tutorial</a></li>
+					<li><a href="guides.html#demonstrationonhowtotransferfish">Demonstration on How to Transfer Fish</a></li>
+			</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="freshwaterfishMenu" class="hover_bgcolor"><a href="freshwaterfish.html">Freshwater Fish</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="freshwaterfish_coldwaterfishMenu"><a href="freshwaterfish.html#coldwaterfish">Coldwater Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_whitecloudmountainminnow.html">White Cloud Mountain Minnow</a></li>
+							<li><a href="freshwaterfish_cometgoldfish.html">Comet Goldfish</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_tropicalfishMenu"><a href="freshwaterfish.html#tropicalfish">Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_guppy.html">Guppy</a></li>
+							<li><a href="freshwaterfish_cherrybarb.html">Cherry Barb</a></li>
+							<li><a href="freshwaterfish_bettasplendens.html">Betta Splendens</a></li>
+						</ul>
+					</li>
+						
+					<!--Second Level-->
+					<li id="freshwaterfish_coldtoleranttropicalfishMenu"><a href="freshwaterfish.html#coldtoleranttropicalfish">Cold-tolerant Tropical Fish</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="freshwaterfish_neontetra.html">Neon Tetra</a></li>
+							<li><a href="freshwaterfish_zebrafish.html">Zebrafish</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="fishtankMenu" class="hover_bgcolor"><a href="fishtank.html">Fish Tank</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="fishtank.html#fishtankrecommendation">Fish Tank Recommendation</a></li>
+					<li><a href="fishtank.html#localaquaticsupplystores">Local Aquatic Supply Stores</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="feedingMenu" class="hover_bgcolor"><a href="feeding.html">Feeding</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="feeding.html#dryfoods">Dry Foods</a></li>
+					<li><a href="feeding.html#frozenfoods">Frozen Foods</a></li>
+					<li><a href="feeding.html#freezedriedfoods">Freeze Dried Foods</a></li>
+					<li><a href="feeding.html#livefoods">Live Foods</a></li>
+					<li><a href="feeding.html#greens">Greens</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="careandmaintenanceMenu" class="hover_bgcolor"><a href="careandmaintenance.html">Care and Maintenance</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li><a href="careandmaintenance_fishhealthcare.html">Fish Health Care</a></li>
+					<li><a href="careandmaintenance_fishtankmaintenance.html">Fish Tank Maintenance</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li id="decorationMenu" class="hover_bgcolor"><a href="decoration.html">Decoration</a>
+				<!--Second Level-->
+				<ul class="dropdown">
+					<li id="decoration_biomaterialsMenu"><a href="decoration.html#biomaterials">Biomaterials</a>
+						<!--Third Level-->
+						<ul class="dropdown">
+							<li><a href="decoration_smallaquariumwaterplants.html">Small Aquarium Water Plants</a></li>
+							<li><a href="decoration_mediumaquariumwaterplants.html">Medium Aquarium Water Plants</a></li>
+							<li><a href="decoration_largeaquariumwaterplants.html">Large Aquarium Water Plants</a></li>
+						</ul>
+					</li>
+				<!--Second Level-->
+					<li><a href="decoration.html#diyornaments">DIY Ornaments</a></li>
+				</ul>
+			</li>
+			
+			<!--First Level-->
+			<li class="hover_bgcolor"><a href="feedback.html">Feedback</a></li>
+			
+			<!--First Level-->
+			<li id="BYT_nav"><a href="buildyourtank.html"><img src="images/nav_byt.png" alt="Build Your Tank"></a></li>
+		</ul>
+	</nav>
+	
+	<article>
+		<div class="fishhealthcare_intro">
+			<h2 class="heading1">Fish Health Care</h2>
+			<p class="context">Understanding Fish Health: Your Essential Guide to Common Diseases and Symptoms! Learn to recognize signs of illness in your aquatic friends, including both treatable and untreatable conditions, to help ensure their well-being.</p>
+		</div>
+	
+		<!--The information is taken from https://www.whwildgoose.com/polycystic-kidneys-->
+		<p class="careandmaintenance_fishhealthcare_image careandmaintenance_fishhealthcare_container_01"><img src="images/neurofibromas.jpg" alt="Neurofibromas in Goldfish"></p>
+
+		<div class="careandmaintenance_fishhealthcare_container_02 careandmaintenance_fishhealthcare_description">
+			<p class="heading2">Neurofibromas in Goldfish</p>
+			<p class="context">Neurofibromas form from neural tissue deep within skin layers.</p>
+			<p class="context"><strong>Symptoms:</strong> Look out for lumps formed on goldfish. It will commonly form a "stalk" and fall off, only to grow back again.</p>
+			<p class="context"><strong>Treatment:</strong> There is currently no effective treatment.</p>
+		</div>
+		
+		<!--The information is taken from https://pethelpful.com/fish-aquariums/diseases-of-a-Betta-fish-->
+		<div class="careandmaintenance_fishhealthcare_container_03 careandmaintenance_fishhealthcare_description">
+			<p class="heading2">Fish & Tail Rot in Betta Fish</p>
+			<p class="context">Fin & Tail rot affects the fins and tails of betta fish. It is caused by bacteria/fungi.</p>
+			<p class="context"><strong>Symptoms:</strong> Symptoms include fins and tail appearing to melt away or discolor due to the rotting.</p>
+			<p class="context"><strong>Treatment:</strong> It can be treated with antibiotics, such as trimethoprim, erythromycin, and sulfadimidine.</p>
+		</div>
+
+		<p class="careandmaintenance_fishhealthcare_container_04 careandmaintenance_fishhealthcare_image"><img src="images/fin_and_tail_rot.jpg" alt="Fin & Tail Rot in Betta Fish"></p>
+		
+		<!--The information is taken from https://www.thesprucepets.com/neon-tetra-disease-1378484-->
+		<p class="careandmaintenance_fishhealthcare_container_01 careandmaintenance_fishhealthcare_image"><img src="images/neon_tetra.jpg" alt="Neon Tetra Disease in Tetra"></p>
+
+		<div class="careandmaintenance_fishhealthcare_container_02 careandmaintenance_fishhealthcare_description">
+			<p class="heading2">Neon Tetra Disease in Tetra</p>
+			<p class="context">Neon Tetra disease is a degenerative condition, commonly in Tetras, caused by parasites that consumes the fish once infected, affecting its muscle tissue and often leading to infections. It is fast spreading and fatal.</p>
+			<p class="context"><strong>Symptoms:</strong> Symptoms include discolouration of fish, cysts developed, difficulty swimming and a severe infection leading to death.</p>
+			<p class="context"><strong>Treatment:</strong> There is no treatment currently available.</p>
+		</div>
+
+		<!--The information is taken from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7253333/-->
+		<div class="careandmaintenance_fishhealthcare_container_03 careandmaintenance_fishhealthcare_description">
+			<p class="heading2">Mycobacteriosis in Zebrafish</p>
+			<p class="context">Mycobateriosis causes granulomas in various organs and also resulting in swim bladder infections.</p>
+			<p class="context"><strong>Symptoms:</strong> There are no specific symptoms to look out for as fish tend to appear normal but have a high mortality rate.</p>
+			<p class="context"><strong>Treatment:</strong> There is no treatment currently available.</p>
+		</div>
+
+		<p class="careandmaintenance_fishhealthcare_container_04 careandmaintenance_fishhealthcare_image"><img src="images/mycobacteriosis.jpeg" alt="Mycobacteriosis in Zebrafish"></p>
+
+		<!--The information is taken from https://www.thesprucepets.com/treat-ichthyophthirius-multifiliis-1378482-->
+		<p class="careandmaintenance_fishhealthcare_container_01 careandmaintenance_fishhealthcare_image"><img src="images/ich.jpg" alt="Ich in Barbs"></p>
+
+		<div class="careandmaintenance_fishhealthcare_container_02 careandmaintenance_fishhealthcare_description">
+			<p class="heading2">Ich in Barbs</p>
+			<p class="context">Ich (white spot diesease) is a parasitic infection caused by an external protozoan parasite.</p>
+			<p class="context"><strong>Symptoms:</strong> Look out for small white spots on the fish's body or fins.</p>
+			<p class="context"><strong>Treatment:</strong> Treatment of choice for Ich is often copper sulfate but it is still recommended to go to a veterinarian.</p>
+		</div>
+
+		<!--The information is taken from https://www.ouraquariumlife.com/fish/guppy-diseases/-->
+		<div class="careandmaintenance_fishhealthcare_container_03 careandmaintenance_fishhealthcare_description">
+			<p class="heading2">Popped Eyes in Guppy</p>
+			<p class="context">Popped eyes (Popeye) is a disorder in which a the fish’s eyes emerge from their sockets. It results from bacterial infections, physical trauma and dietary imbalances.</p>
+			<p class="context"><strong>Symptoms:</strong> Symptoms observed are one or both eyeballs poking out of their sockets.</p>
+			<p class="context"><strong>Treatment:</strong> It can be treated with antibiotics such as erythromycin.</p>
+		</div>
+
+		<p class="careandmaintenance_fishhealthcare_container_04 careandmaintenance_fishhealthcare_image"><img src="images/popped_eyes.jpg" alt="Popped Eyes in Guppy"></p>
+
+		<!--The information is taken from https://www.aquariumsource.com/white-cloud-mountain-minnow/-->
+		<p class="careandmaintenance_fishhealthcare_container_01 careandmaintenance_fishhealthcare_image"><img src="images/streptococcal_infection.png" alt="Streptococcal Infection in White Cloud Minnow"></p>
+
+		<div class="careandmaintenance_fishhealthcare_container_02 careandmaintenance_fishhealthcare_description">
+			<p class="heading2">Streptococcal Infection in White Cloud Minnow</p>
+			<p class="context">Streptococcal infection is caused by bacterial infection.</p>
+			<p class="context"><strong>Symptoms:</strong> Symptoms include fish swimming erratically, unable to hold itself towards the water surface and sinking to the bottom of the tank.</p>
+			<p class="context"><strong>Treatment:</strong> It can be treated with antibiotics such as erythromycin.</p>
+		</div>
+	</article>
+	
+	<footer>
+		<div class="footer footer_links context">
+			<p><img src="images/logo.png" alt="Logo" id="logo_image"></p>
+			
+			<p class="footer_text">Contact The Beginners’ Bubble at:<br>Email: <a href="mailto:berrybluberryblu@gmail.com">berrybluberryblu@gmail.com</a><br>Telephone number: <a href="tel:+6035248775">+6035248775</a></p>
+			
+			<p class="footer_text">&#169; <a href="thebeginnersbubble.html">The Beginners’ Bubble</a> | Last updated: 18 November 2024</p>
+		</div>
+		
+		<p><img src="images/footer.png" alt="Footer" id="footer_image"></p>
+	</footer>
+</body>
+</html>
