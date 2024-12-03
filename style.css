@@ -1,0 +1,1451 @@
+/*Description: BluOasis CSS*/
+/*Authors: Hui Yee WONG, Filicia Jing Xuan WONG, Clara Ricky CHANG*/
+/*Date: 23/10/2024*/
+/*Validation: ok 2/12/2024*/
+
+/*Font Face*/
+@font-face{
+	font-family: "TAN Nimbus";
+	src: url(fonts/tan_nimbus.ttf);
+}
+
+@font-face{
+	font-family: "DM Serif Display";
+	src: url(fonts/dm_serif_display.ttf);
+}
+
+@font-face{
+	font-family: "Playfair Display";
+	src: url(fonts/playfair_display.ttf);
+}
+
+@font-face{
+	font-family: Lovelo;
+	src: url(fonts/lovelo.otf);
+}
+
+@font-face{
+	font-family: "Yeseva One";
+	src: url(fonts/yeseva_one.ttf);
+}
+
+@font-face{
+	font-family: "Noto Serif";
+	src: url(fonts/noto_serif.ttf);
+}
+
+/*Fonts*/
+.title{
+	font: 3.5vw "TAN Nimbus", Lovelo, serif;
+	color: #FFFEFA;
+}
+
+.title a{
+	color: #FFFEFA;
+	text-decoration: none;
+}
+
+.heading1, .heading2, .heading3{
+	font: 30px "DM Serif Display", "Yeseva One", monospace;
+	color: #345B95;
+}
+
+#slogan_01{
+	font:  4.2vw "TAN Nimbus", Lovelo, serif;
+	color: #FFFEFA;
+}
+
+#slogan_02{
+	font: 1.6vw "Playfair Display", "Noto Serif", sans-serif;
+	color: #FFFEFA;
+}
+
+.nav{
+	font: 1.2vw "DM Serif Display", "Yeseva One", monospace;
+	color: #227B94;
+}
+
+.section{
+	font: 25px "Playfair Display", "Noto Serif", sans-serif;
+	color: #4877BE;
+}
+
+.context{
+	font: 16px "Playfair Display", "Noto Serif", sans-serif;
+	letter-spacing: 0.02em;
+	color: #202020;
+}	
+
+.keyword_link a:link{
+	color: #227B94;
+	text-decoration: underline;
+}
+
+.keyword_link a:visited{
+	color: #78B7D0;
+	text-decoration: none;
+}
+
+.keyword_link a:hover{
+	color: #78B7D0;
+	text-decoration: none;
+}
+
+.keyword_link a:active{
+	color: #78B7D0;
+	text-decoration: none;
+}
+
+.start_link a:link{
+	color: #227B94;
+	text-decoration: none;
+}
+
+.start_link a:visited{
+	color: #78B7D0;
+	text-decoration: none;
+}
+
+.start_link a:hover{
+	color: #78B7D0;
+	text-decoration: underline;
+}
+
+.start_link a:active{
+	color: #78B7D0;
+	text-decoration: none;
+}
+
+.sectionlinks a{
+	color: #345B95;
+}
+
+/*Header & Nav Design*/
+html, body{
+	background-color: #FFFEFA;
+	margin: 0;
+	padding: 0;
+	scroll-padding-top: 11vw;
+}
+
+/*Header*/
+header img, .title{
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+}
+
+.title{
+	left: 41%;
+	right: 41%;
+}
+
+/*Nav*/
+.nav{
+	width: 100%;
+	position: fixed;
+	z-index: 998;
+	top: 0;
+}
+
+.nav ul{
+	background-color: #A2E3F5;
+	text-align: center;
+	padding: 0;
+}
+
+.nav ul li{
+	display: inline-block;
+	position: relative;
+	padding: 0 2em;
+}
+
+/*Styling for nav links*/
+.nav a{
+	color: #227B94;
+	text-decoration: none;
+	padding: 0.5em;
+	display: block;
+}
+
+.nav ul .hover_bgcolor a:hover{
+	background-color: #FFFEFA;
+	padding: 0.5em;
+}
+
+/*Dropdown items*/
+/*Second level*/
+/*Hide dropdown*/
+.nav ul ul.dropdown{
+	display: none;
+	position: absolute;
+	top: 100%;
+	background-color: #FFFEFA;
+	width: 12em;
+	z-index: 996;
+}
+
+.nav ul ul.dropdown li{
+	display: block;
+	padding: 0em 0.6em;
+	text-align: left;
+}
+
+/*Show the dropdown on hover*/
+.nav ul li:hover > ul.dropdown{
+	display: block;
+}
+
+/*Change styling for dropdown links */
+.nav ul ul.dropdown li:hover{
+	background-color: #FFFEFA;
+	text-decoration: underline;
+	color: #227B94;
+}
+
+/*Third level*/
+.nav ul li ul li ul.dropdown {
+	display: none;
+	position: absolute;
+	top: 0em;
+	left: 100%;
+	background-color: #FFFEFA;
+	width: 10em;
+}
+	
+/*BYT Button*/
+#BYT_nav{
+	display: inline-block;
+	clear: both;
+	text-align: right;
+	top: 6em;
+	padding: 0em;
+}
+
+#BYT_nav img{
+	width: 7.3em;
+	height: auto;
+}
+
+#BYT_nav:hover img{
+	content: url("images/nav_byt_02.png");
+}
+
+/*Responsive styles for smaller screens*/
+@media(min-width: 768px){
+	.burger_menu{
+		display: none;
+	}
+}
+
+@media (max-width: 768px){
+	.nav{
+		font: 18px "DM Serif Display", "Yeseva One", monospace;
+		color: #227B94;
+	}
+	
+	header img{
+		background-color: #A2E3F5;
+		padding-bottom: 2vw;
+		z-index: 100;
+	}
+	
+    .burger_menu{
+        display: block;
+		position: relative;
+		font-size: 18px;
+		text-align: center;
+		color: #227B94;
+		background-color: #A2E3F5;
+		border: none;
+		width: 20%;
+		padding: 3vw;
+		z-index: 90000;
+		cursor: pointer;
+    }
+
+    .nav .menu{
+        display: none;
+        flex-direction: column; /*Stack menu items vertically*/
+        position: absolute;
+        top: 5.5vw;
+        background-color: #A2E3F5; /*Background color for dropdown*/
+        width: 35%;
+        padding: 1rem;
+        z-index: 9999;
+    }
+
+    /*Show the menu when it is toggled open*/
+    .nav .menu.active {
+        display: flex;
+    }
+
+    /*Style for menu items*/
+    .nav .menu li {
+        text-align: left;
+        padding: 0.5rem 0;
+    }
+	
+    .nav ul .hover_bgcolor a:hover{
+	background-color: #FFFEFA;
+	}
+	
+	/*Hide dropdown*/
+	.nav ul ul.dropdown li{
+		display: none;
+	}
+	
+	#BYT_nav{
+	display: inline;
+	top: 0vh;
+	right: 8vw;
+	padding: 0em;
+	}
+}
+
+/*Article*/
+/*General Styling*/
+article{
+	position: relative;
+	top: 11vw;
+	min-height: 100vh;
+}
+
+/*Index*/
+video{
+	width: 100%;
+}
+
+#slogan_01, #slogan_02{
+	position: absolute;
+	top: 4vw;
+	left: 3vw;
+	text-align: left;
+}
+
+#slogan_02{
+	top: 25vw;
+}
+
+#index_welcome, #index_content{
+	text-align: center;
+	padding-left: 25.65vw;
+	padding-right: 25.65vw;
+}
+
+#disclaimer{
+	color: #FFFEFA;
+	background-color: #345B95;
+	margin: 0 16.67vw;
+	text-align: center;
+	padding: 1.46vw 10.96vw;
+}
+
+/*Hui Yee*/
+/*Freshwaterfish*/
+#freshwaterfish_intro, .decoration_intro{
+	margin: 3vw;
+	padding-right: 35vw;
+	clear: both;
+}
+
+.freshwaterfish_container_01{
+	/*Fluid Layout*/
+	width: 45%;
+	min-width: 500px;
+	margin-left: 3%;
+	float: left;
+	/*Styling*/
+	position: relative;
+}
+
+.freshwaterfish_container_02{
+	/*Fluid Layout*/
+	width: 45%;
+	min-width: 500px;
+	margin-left: 3%;
+	float: left;
+	clear: right;
+	/*Styling*/
+	position: relative;
+	margin-bottom: 3vw;
+}
+
+/*Coldwater Fish*/
+#coldwaterfish{
+	text-align: right;
+}
+
+#whitecloudmountainminnow{
+	background-color: #A2E3F5;
+}
+
+#whitecloudmountainminnow_img_01{
+	position: relative;
+	width: 95%;
+	z-index: 50;
+	right: 10vw;
+}
+
+#whitecloudmountainminnow_text{
+	position: relative;
+	left: 3vw;
+	bottom: 3vw;
+	font-size: 22px;
+}
+
+#cometgoldfish{
+	background-color: #4877BE;
+	padding-bottom: 2.2vw;
+}
+
+#cometgoldfish_img_01{
+	padding-top: 5vw;
+	padding-left: 6vw;
+	width: 95%;
+	z-index: 50;
+}
+
+#cometgoldfish_text{
+	color: #FFFEFA;
+	padding-left: 3vw;
+	font-size: 22px;
+}
+
+/*Tropical Fish*/
+#tropicalfish{
+	text-align: left;
+}
+
+#guppy{
+	background-color: #0d2851;
+}
+
+#guppy_img_01{
+	position: relative;
+	width: 70%;
+	z-index: 50;
+	left: 6vw;
+	bottom: 3vw;
+}
+
+#guppy_text{
+	position: relative;
+	color: #FFFEFA;
+	left: 3vw;
+	bottom: 3vw;
+	font-size: 22px;
+}
+
+#cherrybarb{
+	background-color: #a2e3f5;
+}
+
+#cherrybarb_img_01{
+	position: relative;
+	left: -5vw;
+	width: 80%;
+	z-index: 50;
+}
+
+#cherrybarb_text{
+	position: relative;
+	right: 3vw;
+	bottom: 3vw;
+	font-size: 22px;
+	text-align: right;
+}
+
+#bettasplendens{
+	background-color: #f5f9ff;
+}
+
+#bettasplendens_img_01{
+	position: relative;
+	left: 6vw;
+	width: 95%;
+	z-index: 50;
+}
+
+#bettasplendes_text{
+	position: relative;
+	left: 3vw;
+	bottom: 3vw;
+	font-size: 22px;
+	text-align: left;
+}
+
+/*Cold-tolerant Tropical Fish*/
+#coldtoleranttropicalfish{
+	text-align: left;
+}
+
+#neontetra{
+	background-color: #d7f4ee;
+	padding: 3.1vw 0;
+}
+
+#neontetra_img_01{
+	position: relative;
+	left: -5vw;
+	width: 80%;
+	z-index: 50;
+}
+
+#neontetra_text{
+	position: relative;
+	right: 3vw;
+	font-size: 22px;
+	text-align: right;
+}
+
+#zebrafish{
+	background-color: #4877be;
+}
+
+#zebrafish_img_01{
+	position: relative;
+	left: 4vw;
+	width: 98%;
+	z-index: 50;
+}
+
+#zebrafish_text{
+	position: relative;
+	left: 3vw;
+	bottom: 3vw;
+	font-size: 22px;
+	text-align: left;
+	color: #FFFEFA;
+}
+
+/*Heading 2*/
+.freshwaterfish_heading2, .biomaterials_heading2{
+	font: 16px "DM Serif Display", "Yeseva One", monospace;
+	color: #202020;
+}
+
+.table_heading{
+	background-color: #78B7D0;
+	color: #FFFEFA;
+}
+
+/*Title and Location, Price*/
+.title_location, .price{
+	margin: 3vw;
+}
+
+/*Fish & Biomaterials Image*/
+.fish_img, .biomaterials_img{
+	/*Fluid Layout*/
+	width: 39%;
+	min-width: 400px;
+	margin-left: 3%;
+	float: left;
+	justify-content: center;
+	margin-bottom: 3vw;
+}
+
+/*Fish & Biomaterials Profiles*/
+.basicprofile, .waterplantprofile{
+	/*Fluid Layout*/
+	width: 50%;
+	min-width: 685px;
+	margin-left: 3%;
+	float: left;
+	justify-content: center;
+	/*Styling*/
+	margin-bottom: 3vw;
+	border-collapse: collapse;
+}
+
+/*Fish & Biomaterials Profile Tables*/
+.basicprofile th, .basicprofile td, .waterplantprofile th, .waterplantprofile td{
+	border: 0.2vw solid #78B7D0;
+	padding: 1.65vw;
+}
+
+.basicprofile td, .waterplantprofile td{
+	text-align: center;
+}
+
+.basicprofile td~td, .waterplantprofile td~td{
+	text-align: left;
+}
+
+/*Compability*/
+.compatibility{
+	width: 100%;
+	background-color: #f5f9ff;
+	padding: 3vw 5vw;
+	margin: 3vw auto;
+}
+
+.compatibility th, .compatibility td{
+	padding: 0.5vw;
+}
+
+.compatibility td{
+	text-align: center;
+}
+
+.compatibility_img_01{
+	width: 60%;
+}
+
+.compatibility_img_02{
+	width: 40%;
+}
+
+/*Tank Mates Text_Betta Splendens*/
+#tankmates_text{
+	padding: 0 6vw;
+}
+
+/*Fish Demands*/
+.fishdemands{
+	/*Fluid Layout*/
+	width: 95%;
+	min-width: 500px;
+	margin: auto;
+	/*Styling*/
+	position: relative;
+	border-collapse: collapse;
+	margin-bottom: 2vw;
+}
+
+.fishdemands th, .fishdemands td{
+	border: 0.2vw solid #78B7D0;
+	padding: 1.57vw;
+}
+
+.fishdemands td{
+	text-align: center;
+}
+
+.fishdemands td ~ td{
+	text-align: left;
+}
+
+/*Tip & Note*/
+.tip, #note{
+	background-color: #f5f9ff;
+	text-align: center;
+	padding: 3vw 30vw;
+	margin-bottom: 6vw;
+}
+
+/*Fun Fact_Betta Splendens*/
+#funfact{
+	background-color: #daebc0 ;
+	text-align: center;
+	margin: -6vw 20vw 0 20vw;
+	padding: 3vw 10vw;
+	border-bottom-left-radius: 100vw;
+	border-bottom-right-radius: 100vw;
+}
+		
+/*Buttons Styling*/
+.button_container{
+	display: flex;
+	justify-content: space-between;
+	max-width: 95%;
+    margin: auto;
+	clear: both;
+}
+
+.nextbutton_01{
+	/* Fluid Layout */
+	width: 5%;
+	min-width: 80px;
+	margin-left: 90%;
+	/* Styling */
+	background-color: #A2E3F5;
+	text-align: center;
+	padding: 1vw;
+	border-radius: 5vw;
+}
+
+.nextbutton_02{
+	/* Fluid Layout */
+	width: 5%;
+	min-width: 80px;
+	/* Styling */
+	background-color: #A2E3F5;
+	text-align: center;
+	padding: 1vw;
+	border-radius: 5vw;
+}
+
+.previousbutton_01{
+	/* Fluid Layout */
+	width: 5%;
+	min-width: 80px;
+	margin-left: 3%;
+	/* Styling */
+	background-color: #A2E3F5;
+	text-align: center;
+	padding: 1vw;
+	border-radius: 5vw;
+}
+
+.previousbutton_02{
+	/* Fluid Layout */
+	width: 5%;
+	min-width: 80px;
+	/* Styling */
+	background-color: #A2E3F5;
+	text-align: center;
+	padding: 1vw;
+	border-radius: 5vw;
+}
+
+.previousbutton_01 a, .previousbutton_02 a, .nextbutton_01 a, .nextbutton_02 a{
+	color: #FFFEFA;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*Decoration*/
+.decoration_video{
+	width: 90vw;
+	max-width: 41.67vw;
+	padding-bottom: 3vw;
+	padding-left: 30vw;
+}
+
+.decoration_video iframe{
+	width: 100%;
+	height: 50vw;
+	max-height: 23.44vw;
+	border: none;
+}
+
+/*Small Aquarium*/
+.decoration_container_01{
+	/*Fluid Layout*/
+	width: 93%;
+	min-width: 500px;
+	margin-left: 3%;
+	justify-content: center;
+	clear: both;
+	/*Styling*/
+	margin-bottom: -4vw;
+}
+
+#smallaquariumwaterplants{
+	background-color: #9bdb3e;
+}
+
+#smallaquariumwaterplants_text{
+	position: relative;
+	clear: both;
+	bottom: 17vw;
+	z-index: 51;
+	text-align: center;
+}
+
+#smallaquariumwaterplants_text a{
+	color: #FFFEFA;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+#smallaquariumwaterplants_img{
+	position: relative;
+	width: 100%;
+	z-index: 50;
+	bottom: -2vw;
+}
+
+/*Medium Aquarium*/
+.decoration_container_02{
+	/*Fluid Layout*/
+	width: 45%;
+	min-width: 600px;
+	margin-left: 3%;
+	justify-content: center;
+	float: left;
+	/*Styling*/
+	margin-bottom: -4vw;
+}
+
+#mediumaquariumwaterplants{
+	background-color: #daebc0;
+}
+
+#mediumaquariumwaterplants_img	{
+	position: relative;
+	width: 120%;
+	z-index: 50;
+	left: -8.9vw;
+	bottom: -2vw;
+}
+
+#mediumaquariumwaterplants_text{
+	position: relative;
+	clear: both;
+	bottom: 370px;
+	left: 6.5vw;
+	z-index: 51;
+	text-align: center;
+}
+
+#mediumaquariumwaterplants_text a{
+	color: #202020;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+/*Large Aquarium*/
+.decoration_container_03{
+	/*Fluid Layout*/
+	width: 45%;
+	min-width: 600px;
+	margin-left: 3%;
+	justify-content: center;
+	float: left;
+	clear: right;
+	/*Styling*/
+	margin-bottom: -4vw;
+}
+	
+#largeaquariumwaterplants{
+	background-color: #cde96d;
+}
+
+#largeaquariumwaterplants_img{
+	position: relative;
+	width: 135.5%;
+	z-index: 50;
+	left: -10vw;
+	bottom: -5vw;
+}
+
+#largeaquariumwaterplants_text{
+	position: relative;
+	clear: both;
+	bottom: 370px;
+	left: -7vw;
+	z-index: 51;
+	text-align: center;
+}
+
+#largeaquariumwaterplants_text a{
+	color: #202020;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+/*Feedback Form*/
+form .heading1{
+	text-align: center;
+}
+
+form .heading2{
+	text-align: left;
+	color: #78B7D0;
+	font-size: 25px;
+}
+
+fieldset{
+	border: 3px solid #78B7D0;
+	border-radius: 20px;
+	margin-bottom: 30px;
+}
+
+.form{
+	text-align: center;
+	margin: 3vw 20vw -13vw 20vw;
+}
+
+form table{
+	margin: auto;
+	width: 100%;
+}
+
+form table td{
+	padding: 10px;
+}
+
+.name, .open_ended_01, .open_ended_02, .open_ended_03{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box; /*Include padding in width*/
+	transition: border-color 0.3s; /*Smooth transition for border color*/
+	border-radius: 25px;
+	border: 2px solid #A2E3F5;
+	outline: none;
+}
+
+.open_ended_02{
+	resize: none;
+}
+
+.age_selection{
+	border: 2px solid #A2E3F5;
+	border-radius: 13px;
+	width: 20%;
+	text-align: center;
+	padding: 5px;
+}
+
+input[type="textarea"]:focus{
+    resize: vertical; /*Allow vertical resizing only*/
+}
+
+.rating{
+	/*This makes the stars go from right to left, with the highest rating on the left*/
+	direction: rtl;
+	unicode-bidi: bidi-override; /*This ensures the right-to-left direction is applied correctly*/
+	font-size: 50px;
+	color: lightgray;
+	cursor: pointer;
+	text-align: center;
+}
+
+.rating input{
+	display: none;
+}
+
+.rating label{
+	transition: color 0.2s; /*This adds a smooth animation effect when the star color changes*/
+}
+
+/*This section changes the colour of the stars when a rating is selected*/
+.rating input:checked~label, .rating input:checked + label ~ label{
+	color: #ffdc7f;
+}
+
+/*This section changes the colour of the stars when the user hovers over them*/
+.rating label:hover, .rating label:hover ~ label{
+	color: #ffdc7f;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: #A2E3F5;
+    color: #FFFEFA;
+	border: none;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #FFFEFA;
+	color: #A2E3F5;
+	cursor: pointer;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 1vw;
+	font: 16px "Playfair Display", "Noto Serif", sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5vw;
+    transition: all 0.3s ease;
+	z-index: 100;
+}
+
+#feedback_button{
+	padding-bottom: 10vw;
+}
+
+/*Filicia*/
+/*Feeding*/
+.feeding_intro{
+	margin: 3vw;
+	padding-right: 35vw;
+	clear: both;
+}
+
+.feeding_tip{
+	background-color: #f5f9ff;
+	text-align: center;
+	padding: 3vw 30vw;
+	margin: 0 -2.5vw;
+}
+
+.feeding_column1, .feeding_column2 {
+	width: 45%;           
+	display: inline-block;
+	vertical-align: top; 
+	min-width: 500px;  
+	margin-left: 3%;
+	margin-bottom: 2%;
+}
+
+.feeding_description{
+	padding-top: 3.5%;
+}
+
+.feeding_image{
+	margin-right: 0;
+}
+
+.feeding_image img{
+	width: 100%;
+	height: auto;
+}
+
+.feeding_figcaption table{
+	margin: 0 auto;
+}
+
+.feeding_figcaption td{
+	width: 20vw;
+	text-align: center;
+	background-color: #D7F4EE;
+	padding: 1vw;
+}
+
+.feeding_sidenote td{
+	background-color: #D7F4EE;
+	padding: 1.5vw 5vw;
+}
+
+.feeding_sidenote{
+	margin-top: 3vw;
+}
+
+.feeding_figcaption table {
+  margin: 0 auto;            
+  border-spacing: 70px 0;        
+}
+
+#dryfoods_description{
+	padding-top: 4%;
+}
+
+#frozenfoods_description{
+	padding-top: 7%;
+}
+
+#livefoods_description{
+	padding-top: 6%;
+}
+
+#greens_description{
+	padding-top: 6%;
+}
+
+/*Care and Maintenance*/
+.careandmaintenance_intro {
+  margin: 3vw;
+  padding-right: 35vw;
+  clear: both;
+}
+
+.careandmaintenance_container {
+  width: 100%;
+  margin-top: 3vw;
+}
+
+.careandmaintenance_container>div {
+  position: relative;
+  width: 100%; 
+	text-align: center;
+}
+
+.careandmaintenance_cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.careandmaintenance_cover img {
+  width: 70%;
+  height: auto;
+}
+
+#care_heading, #maintenance_heading {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  text-align: center;
+  color: #FFFEFA;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  background-color: #345B9580;
+  padding: 0.5% 2%;
+}
+
+#care_heading a, #maintenance_heading a {
+    text-decoration: none;
+    color: #FFFEFA;
+}
+
+/*Care and Maintenance_Fish Health Care*/
+.fishhealthcare_intro{
+	margin: 3vw;
+	padding-right: 35vw;
+	clear: both;
+}
+
+.careandmaintenance_fishhealthcare_container {
+    margin-bottom: 3vw;            
+}
+
+.careandmaintenance_fishhealthcare_description p{
+	margin-left: 9%;
+	margin-right: 9%;
+}
+
+.careandmaintenance_fishhealthcare_image img {
+   width: 100%;                 
+   height: auto;                 
+}
+
+.careandmaintenance_fishhealthcare_container_01 , .careandmaintenance_fishhealthcare_container_04{
+  width: 45%;           
+  display: inline-block;
+  vertical-align: top; 
+  min-width: 500px;  
+  margin: 2%; 
+}
+
+.careandmaintenance_fishhealthcare_container_02 , .careandmaintenance_fishhealthcare_container_03{
+  width: 45%;           
+  display: inline-block;
+  vertical-align: top; 
+  min-width: 500px;  
+  margin: 2%; 
+}
+
+
+/*Care and Maintenance_Fish Tank Maintenance*/
+.fishtankmaintenance_intro{
+	margin: 3vw;
+	padding-right: 35vw;
+	clear: both;
+}
+
+.fishtankmaintenance_image{
+	width: 100%;
+}
+
+.fishtankmaintenance_image img{
+	width: 100%;
+	height: auto;
+}
+
+.fishtankmaintenance_description .heading3{
+	text-align: center;
+}
+
+.fishtankmaintenance_container_01{
+	/*Fluid Layout*/
+	width: 45%;
+	min-width: 500px;
+	margin-left: 3%;
+	float: left;
+	/*Styling*/
+	position: relative;
+}
+
+.fishtankmaintenance_container_02{
+	/*Fluid Layout*/
+	width: 45%;
+	min-width: 500px;
+	margin-left: 3%;
+	float: left;
+	clear: right;
+	/*Styling*/
+	position: relative;
+	margin-bottom: 3vw;
+}
+
+.careandmaintenance_fishhealthcare_description{
+	padding-top: 4.5%;
+}
+
+/*The Beginners' Bubble*/
+.intro_texts{
+	text-align: center;
+	padding: 0 10vw;
+}
+
+.team_container{
+	display: flex;
+	justify-content: center;
+	padding: 1%;
+	flex-wrap: wrap; /*This allows wrapping on smaller screens*/
+}
+
+.team_info{
+	text-align: center;
+	padding: 1.6vw;
+	padding-bottom: 8vw
+}
+
+.column{
+	flex: 1; /*this allows columns to grow equally*/
+	max-width: 30vw;
+	margin: 2%;
+}
+
+.card{
+	background: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #A2E3F5; 
+    margin-bottom: 2vw;
+    overflow: hidden; /*Makes the images corner round*/
+    transition: transform 0.3s; /*Smooth transition for hover effect*/
+}
+
+.card:hover {
+    background-color: #E4FCFA;
+    transform: translateY(-2px); /*Lift effect on hover*/
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/*Media query for smaller screens*/
+@media (max-width: 768px) {
+  .column {
+    flex-basis: 50%; /*Two columns on medium screens*/
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    flex-basis: 100%; /*One column on small screens*/
+  }
+}
+
+/*Clara*/
+/*Guides*/
+.content{
+	margin: 3%;
+}
+
+.guides_text{
+	padding-right: 30%;
+}
+
+.video_container{
+  width: 90vw;
+  max-width: 41.67vw;
+  padding-left: 25vw;
+}
+
+.video_container iframe{
+  width: 100%;
+  height: 50vw;
+  max-height: 23.44vw;
+  border: none;
+}
+
+/*Fish Tank*/
+/*Container for the fish tank cards*/
+.tank_container{
+    display: flex;
+    flex-wrap: wrap; /*Allow the cards to wrap to the next line if needed*/
+    gap: 20px; /*Space between the cards*/
+    justify-content: center; 
+    padding: 5%;
+    background-color: transparent;
+}
+
+/*Wrapper for each individual tank card*/
+.tank_card_wrapper{
+    display: flex;
+    flex-direction: column; /*Stack the card elements vertically*/
+    align-items: center; /*Center the card elements horizontally*/
+    max-width: 300px; 
+    margin: 2%;
+}
+
+/*Styles for the tank card container*/
+.tank_card{
+    text-align: center; 
+}
+
+/*Styles for the tank image*/
+.tank_image{
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; /*to ennsure the image maintains its aspect ratio and fills the container*/
+    border-radius: 10px; 
+}
+
+/*Styles for the tank name*/
+.tank_name{
+    font-size: 1.2em; 
+    font-weight: bold; 
+    color: #345B95; 
+    margin-top: 2%;
+}
+
+/*Styles for the button container*/
+.tank_button_container{
+    text-align: center; /*Center the button*/
+    margin-top: 2%; 
+    width: 100%; 
+}
+
+/*Styles for the fish tank button*/
+.fishtank_button{
+    padding: 5%; 
+    background-color: #4CAF50;
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; /*Change the cursor to a pointer to indicate the button is clickable*/ 
+    transition: background-color 0.3s, transform 0.3s; /*Add a smooth transition for the hover effect*/
+}
+
+/* Hover effect for the fish tank button */
+.fishtank_button:hover{
+    background-color: #45a049; 
+    transform: translateY(-2px); /*Lift the button up slightly on hover*/
+}
+
+/*Styles for the pop-up content*/
+.pop-up_content{
+    margin-top: 2%; 
+    padding: 5%; 
+    border-radius: 5px; 
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /*Add a subtle drop shadow to the pop-up*/
+}
+
+.stores_container .section{
+	text-align: center;
+}
+
+/*General styles for the container of each store*/
+.stores_container{
+    display: flex; /*flexbox for layout*/
+    flex-direction: row; /*default to row layout*/
+    flex-wrap: wrap; /*Allow wrapping to the next line*/
+    margin: 2%;           
+}
+
+/*Style for the fish stores table*/
+.fish_stores{
+    flex: 1 300px; /*allow the table to grow/shrink, with a minimum width*/
+    max-width: 600px;        
+    margin: 2%;
+    border-collapse: separate; 
+	border: 3px solid #78B7D0;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+.caption{
+	caption-side: bottom;
+	color: #78B7D0;
+	font: 16px "Playfair Display", "Noto Serif", sans-serif;
+	letter-spacing: 0.02em;
+	padding-top: 3px;
+}
+
+/*Style for table cells*/
+.fish_stores td{
+    padding: 7px;           
+    vertical-align: center;
+}
+
+/*Map container styling*/
+.map_container{
+    flex: 1 1 300px; /*Allow the map to grow/shrink, with a minimum width*/
+    max-width: 600px;          
+    margin: 2%;              
+}
+
+/*Style for the iframe*/
+.map_container iframe{
+    width: 100%;              
+    height: 30vw;             
+    max-height: 300px;         
+    border: none;              
+    margin-top: 2%;        
+}
+
+/*Build Your Tank*/
+.aquarium_builder{
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#aquarium_builder_embed{
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/*Footer*/
+footer .context{
+	font-size: 1.3vw;
+}
+
+footer{
+	text-align: center;
+	clear: both;
+	margin-top: 3vw;
+}
+
+.footer_container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+.footer_links a {
+  color: #345B95;
+  text-decoration: none;
+}
+
+.footer_links a:hover {
+  text-decoration: underline;
+}
+
+#logo_image {
+	position: absolute;
+	width: 10%;
+	left: 30vw;
+	bottom: 0.05vw;
+}
+
+#footer_image {
+	width: 100%;
+	margin-bottom: -3vw;
+}
+
+.footer{
+	position: relative;
+	bottom: -23vw;
+	text-align: center;
+}
+
+.footer_text{
+	text-align: left;
+	padding-left: 40vw;
+	margin: 0 auto;
+}
+
+@media(max-width: 768px){
+	footer .context{
+		font-size: 2vw;
+	}
+
+	#logo_image{
+		position: absolute;
+		width: 10%;
+		left: 25vw;
+		bottom: 0.05vw;
+	}
+
+	.footer_text{
+		text-align: left;
+		padding-left: 35%;
+		margin: auto;
+	}
+}
